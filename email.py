@@ -169,8 +169,7 @@ class Inbox():
 
                     for email_num, email in enumerate(self.inbox, 1):
 
-                        if email_choice == email_num and email.has_been_read \
-                            is False:
+                        if email_choice == email_num and email.has_been_read is False:
                             read_email = "*" * 80 + "\n"
                             read_email += f"From: \t\t{email.email_address}\n\n"
                             read_email += f"Subject: \t{email.subject_line}\n\n"
@@ -181,8 +180,7 @@ class Inbox():
                             email.mark_as_read()
                             break
 
-                        elif email_choice == email_num and email.has_been_read \
-                            is True:
+                        elif email_choice == email_num and email.has_been_read is True:
                             print("Incorrect input - this email has been read.")
 
                     break
