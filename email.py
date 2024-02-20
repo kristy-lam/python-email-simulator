@@ -180,8 +180,7 @@ class Inbox():
                             email.mark_as_read()
                             break
 
-                        elif email_choice == email_num and email.has_been_read \
-                            is True:
+                        elif email_choice == email_num and email.has_been_read is True:
                             print("Incorrect input - this email has been read.")
 
                     break
