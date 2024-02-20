@@ -169,8 +169,7 @@ class Inbox():
 
                     for email_num, email in enumerate(self.inbox, 1):
 
-                        if email_choice == email_num and email.has_been_read \
-                            is False:
+                        if email_choice == email_num and not email.has_been_read:
                             read_email = "*" * 80 + "\n"
                             read_email += f"From: \t\t{email.email_address}\n\n"
                             read_email += f"Subject: \t{email.subject_line}\n\n"
